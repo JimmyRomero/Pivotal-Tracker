@@ -1,0 +1,181 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "GET method for Project API",
+        "description": "",
+        "id": "test-for-api-testing-class---project;get-method-for-project-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "I have setup a connection to pivotal_tracker API service",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "I send a /projects GET request",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I expect Status code 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "POST method for Project API",
+        "description": "",
+        "id": "test-for-api-testing-class---project;post-method-for-project-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I have setup a connection to pivotal_tracker API service",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I send a /projects POST with the json",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Project 001"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Description",
+                  "Description"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I expect Status code 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "PUT method for Project API",
+        "description": "",
+        "id": "test-for-api-testing-class---project;put-method-for-project-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I have setup a connection to pivotal_tracker API service",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "I send a /project PUT request to ProjectRequest with json",
+            "match": {},
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 18,
+              "value": "  {\r\n    \"name\":\"Project test updated\"\r\n  }"
+            }
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "I expect Status code 200",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "DELETE method for Project API",
+        "description": "",
+        "id": "test-for-api-testing-class---project;delete-method-for-project-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "I have set a connection to pivotal_tracker API service",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "I send a /project DELETE request to ProjectRequest",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "I expect Status code 204",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test for API Testing class - PROJECT",
+    "description": "",
+    "id": "test-for-api-testing-class---project",
+    "keyword": "Feature",
+    "uri": "src/test/resources/project.feature"
+  }
+]
